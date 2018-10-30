@@ -100,13 +100,13 @@ if ! [ -x "$(which aws)" ]; then
     exit 1
 fi
 
-tmpdir=$(mktemp -d)
+#tmpdir=$(mktemp -d)
 
-cd "$tmpdir"
+#cd "$tmpdir"
 
-git clone -b "$RELEASE" https://github.com/canvaspop/aws-ec2-ssh.git
+#git clone -b "$RELEASE" https://github.com/canvaspop/aws-ec2-ssh.git
 
-cd "$tmpdir/aws-ec2-ssh"
+#cd "$tmpdir/aws-ec2-ssh"
 
 cp authorized_keys_command.sh $AUTHORIZED_KEYS_COMMAND_FILE
 cp import_users.sh $IMPORT_USERS_SCRIPT_FILE
